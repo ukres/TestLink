@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcases>
+<testcase internalid="226" name="Dig up &quot;znalezisko&quot;">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[37]]></externalid>
+	<fullexternalid><![CDATA[wykop-37]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Dig &quot;znalezisko&quot; by the logged user</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Logged user</li>
+	<li>&quot;znalezisko&quot; exists</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &quot;dig up&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the button changes the name to &#39;withdrawal&#39;, &quot;znalezisko&quot;&nbsp; dug up, number of votes increased</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="229" name="Dig up &quot;znalezisko&quot; (picture)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[38]]></externalid>
+	<fullexternalid><![CDATA[wykop-38]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test of digging a &quot;znalezisko&quot; by the user with a picture</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Logged user</li>
+	<li>&quot;znalezisko&quot; exists</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click the picture</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the button changes the name to &#39;withdrawal&#39;, &quot;znalezisko&quot;&nbsp; dug up, number of votes increased</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="232" name="List of dig up &quot;znalezisko&quot; by the user">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[39]]></externalid>
+	<fullexternalid><![CDATA[wykop-39]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify list of all dig up &quot;znalezisko&quot; by the user</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Logged user</li>
+	<li>&quot;znalezisko&quot; exists</li>
+	<li>user dig up &quot;znalezisko</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>clicking on the user avatar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening a user profile</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click &quot;znaleziska&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page &quot;znaleziska&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &quot;dig up&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with list dig up &quot;znalezisko&quot; by the user</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="237" name="Bury &quot;znalezisko&quot;">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[40]]></externalid>
+	<fullexternalid><![CDATA[wykop-40]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify bury &quot;znalezisko&quot; by loggin user</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Logged user</li>
+	<li>&quot;znalezisko&quot; exists</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;bury&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Opening the list of causes</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>choosing the reason for the burying</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&quot;znalezisko&quot; buried, picture turns gray colour</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="241" name="List of bury &quot;znalezisko&quot; by the user">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[41]]></externalid>
+	<fullexternalid><![CDATA[wykop-41]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify list of all bury &quot;znalezisko&quot; by the user</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Logged user</li>
+	<li>&quot;znalezisko&quot; exists</li>
+	<li>user buried &quot;znalezisko&quot;</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>clicking on the user avatar</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening a user profile</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click &quot;znaleziska&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening page &quot;Znaleziska&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click &quot;&#39;Bury&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with list buried &quot;znalezisko&quot; by the user</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="246" name="Withdrawal dig up">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[42]]></externalid>
+	<fullexternalid><![CDATA[wykop-42]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify withdrawal dig up by user</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Logged user</li>
+	<li>&quot;znalezisko&quot; exists</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &quot;dig up&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the button changes the name to &#39;withdrawal&#39;, &quot;znalezisko&quot;&nbsp; dug up, number of votes increased</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click &#39;withdrawal&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The key changes the name to &quot;dig up&quot;, the number of votes drops</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="250" name="Withdrawal bury">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[43]]></externalid>
+	<fullexternalid><![CDATA[wykop-43]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify withdrawal bury by user</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Logged user</li>
+	<li>&quot;znalezisko&quot; exists</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;bury&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Opening the list of causes</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Choosing the reason for bury</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&quot;znalezisko&quot; buried, the picture changes the color to gray</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;withdrawal&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&quot;znalezisko&quot; natural, colorful picture</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="266" name="Add &quot;znalezisko&quot; (empty link)">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[46]]></externalid>
+	<fullexternalid><![CDATA[wykop-46]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify add &quot;znalezisko&quot;, add &quot;znalezisko&quot; with empty link field</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Leaving an empty link field and clicking &quot;Add a &quot;znalezisko&quot; on the web&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>An empty field message, the &quot;znalezisko&quot; is not added</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="270" name="Add &quot;znalezisko&quot; (picture from web)">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[47]]></externalid>
+	<fullexternalid><![CDATA[wykop-47]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify add &quot;znalezisko&quot;, add with the picture from web</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;link&#39; field, enter the correct link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &quot;add &quot;znalezisko&quot; on the web&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with duplicate</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click &#39;Add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with the form &quot;znalezisko&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Choosing a picture with &quot;Add graphics&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Opening the &quot;Add miniature&quot; field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Entering the address in the graphics and click &quot;Add&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>add picture</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>in the &#39;title&#39; and &#39;description&#39; field, enter the correct characters</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>add #tag</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>#tag added</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>click &quot;add &quot;znalezisko&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>added &quot;zanalezisko&quot;, opening page with &quot;znalezisko&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="281" name="Add &quot;znalezisko&quot; (own picture)">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[48]]></externalid>
+	<fullexternalid><![CDATA[wykop-48]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify add &quot;znalezisko&quot; with owe picture</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;link&#39; field, enter the correct link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &quot;add &quot;znalezisko&quot; on the web&quot;</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening duplicate page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with the form &quot;znalezisko&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Choosing a picture with &quot;Add graphics&quot;</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Opening the &quot;Add miniature&quot; field</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>click &#39;Choose a file&#39; and click &#39;Browse&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Opening of the operation window</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>choosing the picture and click &#39;open</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>picture added</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>in the &#39;title&#39; and &#39;description&#39; field, enter the characters</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>add #tag</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>#tag added</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>click &#39;add &quot;znalezisko&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>added &quot;zanalezisko&quot;, opening page with &quot;znalezisko&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="293" name="Add &quot;znalezisko&quot;">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[49]]></externalid>
+	<fullexternalid><![CDATA[wykop-49]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify add &quot;znalezisko&quot;</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;link&#39; field, enter the correct link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &quot;add &quot;znalezisko&quot; on the web&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with duplicate</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with the form &quot;znalezisko&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Choosing a picture from the proposed</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Picture selected</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>in the &#39;title&#39; and &#39;description&#39; field, enter the characters</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>add #tag</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>#tag added</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&quot;znalezisko&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening of the form summary</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>click &#39;Yes, add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>added &quot;zanalezisko&quot;, opening page with &quot;znalezisko&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="304" name="Add &quot;znalezisko&quot; (empty form field)">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[50]]></externalid>
+	<fullexternalid><![CDATA[wykop-50]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify add &quot;znalezisko&quot; with empty field</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;link&#39; field, enter the correct link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &quot;add &quot;znalezisko&quot; on the web&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with duplicate</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with the form &quot;znalezisko&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>choosing a picture with &quot;Add graphics&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Opening the &quot;Add miniature&quot; field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>choosing a file and click &#39;browse&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening of the operation window</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>selecting graphics and click &quot;Open&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>picture add</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>Leaving empty fields: title, description, no tag and click &quot;Add &quot;znalezisko&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Opening of the form summary</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>click &#39;yes, add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message: &quot;Please give the title&quot;, &quot;Please give a description&quot;, &quot;You must give at least one tag&quot;, not added, return to the form</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="315" name="Add &quot;znalezisko&quot; long title (81) and description (301)">
+	<node_order><![CDATA[14]]></node_order>
+	<externalid><![CDATA[51]]></externalid>
+	<fullexternalid><![CDATA[wykop-51]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify add &quot;znalezisko&quot; with long title (81 characters) nad long description (301 characters)</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;link&#39; field, enter the correct link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &quot;add &quot;znalezisko&quot; on the web&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with duplicate</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with the form &quot;znalezisko&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>choosing a picture from the proposed</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>picture selected</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>in the &#39;title&#39; field, enter the 81 characters,</p>
+
+<p>in the &#39;description&#39; , enter the 301 characters</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled, message about the length of the characters in red</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>add #tag</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>#tag added</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&quot;znalezisko&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Opening of the form summary</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>click &#39;yes, add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message: &quot;The title must have more than 6 characters and less than 80&quot;, &quot;the description must have more than 10 characters and less than 300 characters&quot;, the &quot;znalezisko&quot; is not added, return to the form</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="326" name="Add &quot;znalezisko&quot; short title (5) iand description (9)">
+	<node_order><![CDATA[15]]></node_order>
+	<externalid><![CDATA[52]]></externalid>
+	<fullexternalid><![CDATA[wykop-52]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify add &quot;znalezisko&quot; with short fitle (5 characters) nad short description (9 characters)</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;link&#39; field, enter the correct link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &quot;add &quot;znalezisko&quot; on the web&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with duplicate</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with the form &quot;znalezisko&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>choosing a picture from the proposed</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>picture selected</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>wypełnienie pola tytuł (5 znak&oacute;w) oraz opis (9 znak&oacute;w)</p>
+
+<p>in the &#39;title&#39; field, enter the 5 characters</p>
+
+<p>in the &#39;description&#39; field, enter the 9 characters</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled, message about the length of the characters in red</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>add #tagu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>#tag added</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>click &quot;add &quot;znalezisko&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening of the form summary</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>click &#39;yes, add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message: &quot;The title must have more than 6 characters and less than 80&quot;, &quot;the description must have more than 10 characters and less than 300 characters&quot;, the &quot;znalezisko&quot; is not added, return to the form</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="337" name="Add &quot;znalezisko&quot;  a large number of tags (7)">
+	<node_order><![CDATA[16]]></node_order>
+	<externalid><![CDATA[53]]></externalid>
+	<fullexternalid><![CDATA[wykop-53]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify add &#39;znalezisko&#39; with 7 tags</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;link&#39; field, enter the correct link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &quot;add &quot;znalezisko&quot; on the web&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with duplicate</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page with the form &quot;znalezisko&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>choosing a picture from the proposed</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>picture selected</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>in the &#39;title&#39; and &#39;desctiption&#39; field, enter correct title and description</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>add 7 tags</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>#tags added</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>click &#39;add &quot;znalezisko&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message: &quot;You can give a maximum of 6 tags&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="347" name="Edit added &quot;znalezisko&quot; (title, description, tag)">
+	<node_order><![CDATA[17]]></node_order>
+	<externalid><![CDATA[54]]></externalid>
+	<fullexternalid><![CDATA[wykop-54]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify ability to edit the added &quot;znalezisko&quot;</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+	<li>user is the author</li>
+	<li>no more than 14 minutes 59 seconds passed since the &quot;znalezisko&quot; was added</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click - Hamburger type menu -&gt; title and description</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening form to edit title, description, #tag</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;title, &#39;descryption&#39;, &#39;#tag&#39; filed, enter the different characters</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;save&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening &quot;znalezisko&quot; page, title, description, #tag is changed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="352" name="Edit added &quot;znalezisko&quot; (empty field)">
+	<node_order><![CDATA[18]]></node_order>
+	<externalid><![CDATA[55]]></externalid>
+	<fullexternalid><![CDATA[wykop-55]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify ability to edit the added &quot;znalezisko&quot; with empty field</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+	<li>user is the author</li>
+	<li>no more than 15 minutes passed since the &quot;znalezisko&quot; was added</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click - Hamburger type menu -&gt; title and description</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening form to edit title, description, #tag</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>delete fields and stay empty fields</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>empty field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;save&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message: &quot; &quot;Title must be more than 6 characters and less than 80&quot;, &quot;Description must be more than 10 characters and less than 300 characters&quot;, &quot;at least one tag&quot;, edit form open</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="357" name="Edit added &quot;znalezisko&quot; (a lot of characters)">
+	<node_order><![CDATA[19]]></node_order>
+	<externalid><![CDATA[56]]></externalid>
+	<fullexternalid><![CDATA[wykop-56]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify ability to edit the added &quot;znalezisko&quot; with a lot of characters.</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+	<li>user is the author</li>
+	<li>no more than 15 minutes passed since the &quot;znalezisko&quot; was added</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click - Hamburger type menu -&gt; title and description</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening form to edit title, description, #tag</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;title&#39;, &#39;desctiption&#39;, &#39;#tag&#39; field, enter the title with 81 characters, description with 301 characters, tag with 7 words</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>fields filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;save&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message: &quot; &quot;Title must be more than 6 characters and less than 80&quot;, &quot;Description must be more than 10 characters and less than 300 characters&quot;, &quot;at least one tag&quot;, edit form open</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="362" name="Edit added &quot;znalezisko&quot; (too few characters)">
+	<node_order><![CDATA[20]]></node_order>
+	<externalid><![CDATA[57]]></externalid>
+	<fullexternalid><![CDATA[wykop-57]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify ability to edit the added &quot;znalezisko&quot; with too few characters</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+	<li>user is the author</li>
+	<li>no more than 15 minutes passed since the &quot;znalezisko&quot; was added</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click - Hamburger type menu -&gt; title and description</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening form to edit title, description, #tag</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>wypełnienie pola tytuł (5 znak&oacute;w), opis (9 znak&oacute;w), tag (1)</p>
+
+<p>in the &#39;title&#39;, &#39;description&#39;, &#39;tag&#39; fields, enter the title witch 5 characters, description with 9 characters, tag with one word</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>fields filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;save&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message: &quot; &quot;Title must be more than 6 characters and less than 80&quot;, &quot;Description must be more than 10 characters and less than 300 characters&quot;, edit form open</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="367" name="Edit added &quot;znalezisko&quot; (url)">
+	<node_order><![CDATA[21]]></node_order>
+	<externalid><![CDATA[58]]></externalid>
+	<fullexternalid><![CDATA[wykop-58]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify ability to edit the added &quot;znalezisko&quot; - edit url</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+	<li>user is the author</li>
+	<li>no more than 15 minutes passed since the &quot;znalezisko&quot; was added</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click - Hamburger type menu -&gt; url</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening form to edit url</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;url&#39; field, enter the diferent characters (url pattern)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;save&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening &quot;znalezisko&quot;, url edited</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="372" name="Edit added &quot;znalezisko&quot; (empty url)">
+	<node_order><![CDATA[22]]></node_order>
+	<externalid><![CDATA[59]]></externalid>
+	<fullexternalid><![CDATA[wykop-59]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify ability to edit the added &quot;znalezisko&quot; - empty url</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+	<li>user is the author</li>
+	<li>no more than 15 minutes passed since the &quot;znalezisko&quot; was added</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click - Hamburger type menu -&gt; url</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening form to edit url</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>delete url field, stay empty</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>empty url field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;save&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message; &quot;please enter url&quot;, edit form open</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="377" name="Edit added &quot;znalezisko&quot; (picture)">
+	<node_order><![CDATA[23]]></node_order>
+	<externalid><![CDATA[60]]></externalid>
+	<fullexternalid><![CDATA[wykop-60]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify ability to edit the added &quot;znalezisko&quot;, change the picture</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+	<li>user is the author</li>
+	<li>no more than 15 minutes passed since the &quot;znalezisko&quot; was added</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click - Hamburger type menu -&gt; view</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening form to edit picture</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;picture adress&#39; filed, enter the new picture adress</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;change picture&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening &quot;znalezisko&quot; page, picture changed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="382" name="Edit added &quot;znalezisko&quot; (empty picture adress)">
+	<node_order><![CDATA[24]]></node_order>
+	<externalid><![CDATA[61]]></externalid>
+	<fullexternalid><![CDATA[wykop-61]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify ability to edit the added &quot;znalezisko&quot;, delete picture adress and save.</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>logged user</li>
+	<li>user is the author</li>
+	<li>no more than 15 minutes passed since the &quot;znalezisko&quot; was added</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click - Hamburger type menu -&gt; -&gt; view</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening form to edit picture</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;picture adress&#39; field, delete all characters</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field empty</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &quot;change picture&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>picture not change, editing forum open</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="387" name="Opening the website from added &quot;znalezisko&quot;">
+	<node_order><![CDATA[25]]></node_order>
+	<externalid><![CDATA[62]]></externalid>
+	<fullexternalid><![CDATA[wykop-62]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify a hyperlink from added &quot;znalezisko&quot; which redirects to a website of the url field</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>&quot;znalezisko&quot; exists</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &quot;znalezisko&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening &quot;znalezisko&quot; page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click on the title</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening the website, with the ulr field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="391" name="Opening the website from edited url &quot;znalezisko&quot;">
+	<node_order><![CDATA[26]]></node_order>
+	<externalid><![CDATA[63]]></externalid>
+	<fullexternalid><![CDATA[wykop-63]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify a hyperlink from edited url &quot;znalezisko&quot; which redirects to a website of the url field</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>&quot;znalezisko&quot; exists</li>
+	<li>edited url field</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &quot;znalezisko&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open &quot;znalezisko&quot; page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click on title</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening the website, with the ulr field</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="398" name="Edit added &quot;znalezisko&quot; (above 15 minutes)">
+	<node_order><![CDATA[28]]></node_order>
+	<externalid><![CDATA[65]]></externalid>
+	<fullexternalid><![CDATA[wykop-65]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify ability to edit the added &quot;znalezisko&quot; above 15:00 minutes</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>&quot;added &quot;znalezisko&quot;</li>
+	<li>user logged</li>
+	<li>user is author</li>
+	<li>more than 15 minutes passed since the &quot;znalezisko&quot; was added</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click - Hamburger type menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>no options: &quot;Edit: title/description, url, view&quot;, impossible to edit &quot;znalezisko&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="401" name="Dig up &quot;znalezisko&quot; (not log in)">
+	<node_order><![CDATA[29]]></node_order>
+	<externalid><![CDATA[66]]></externalid>
+	<fullexternalid><![CDATA[wykop-66]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Dig up &quot;znalezisko&quot; by the not logged users</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>&quot;znalezisko&quot; exists</li>
+	<li>user not log in</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &quot;znalezisko&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open &quot;znalezisko&quot; page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click &#39;dig up&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening log in page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="405" name="Add &quot;znalezisko&quot; (not log in)">
+	<node_order><![CDATA[30]]></node_order>
+	<externalid><![CDATA[67]]></externalid>
+	<fullexternalid><![CDATA[wykop-67]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verify add &quot;znalezisko&quot; by not log in users</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user not log in</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;add&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening log in page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="408" name="Dig up &quot;znalezisko&quot; (not log in) 2">
+	<node_order><![CDATA[31]]></node_order>
+	<externalid><![CDATA[68]]></externalid>
+	<fullexternalid><![CDATA[wykop-68]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Dig up &quot;znalezisko&quot; by the not logged users with picture</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>&quot;znalezisko&quot; exists</li>
+	<li>user not log in</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click the picture</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opening log in page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testcases>

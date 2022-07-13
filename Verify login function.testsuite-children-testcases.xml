@@ -1,0 +1,2051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcases>
+<testcase internalid="3" name="Registration user">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<fullexternalid><![CDATA[wykop-3]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>New user registration</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>User has a valid email</li>
+	<li>User name is free</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;user&rsquo; field, enter the user name</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &#39;password&#39; field, enter the password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In the &#39;email&#39; field, enter the user email</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Accepting the website regulations</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field is [x]</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;Registration&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Opening the page with &#39;Link sent to [registration e-mail] to activate the account&#39;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Open the link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>registered user, opening the home page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21" name="Registration user (wrong password)">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<fullexternalid><![CDATA[wykop-4]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Registration user with wrong passwod</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user name is free</li>
+	<li>email is active</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;user&rsquo; field, enter the user name</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;password&rsquo; field, enter the password with 5 characters</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled, message &#39;minimum password length 6 characters&#39;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>n the &rsquo;email&rsquo; field, enter the email</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Accepting the website regulations</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field is [x]</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;Registration&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Reopen the user registration page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="28" name="Registration user (existing data)">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<fullexternalid><![CDATA[wykop-5]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>User registration with existing user name and email</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>User email is not free</li>
+	<li>Email is used to registration</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;user&rsquo; field, enter the user name</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;password&rsquo; field, enter the password</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;email&rsquo; field, enter the email, which used to registration</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Accepting the website regulations</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field is [x]</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;Registration;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Reopen the user registration page</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="35" name="Login by user name">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<fullexternalid><![CDATA[wykop-6]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging in using the user name used for registration.</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has a account</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;user or email &rsquo;field, enter the user name</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>G</p>
+
+<p>M</p>
+
+<p>T</p>
+
+<p>Y</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Wykryj językAfrikaansAlbańskiAmharskiAngielskiArabskiAzerskiBaskijskiBengalskiBiałoruskiBirmańskiBośniackiBułgarskiCebuańskiChiński tradChiński uprChorwackiCzeskiCziczewaDuńskiEsperantoEstońskiFilipińskiFińskiFrancuskiFryzyjskiGalicyjskiGreckiGruzińskiGudżaratiHausaHawajskiHebrajskiHindiHiszpańskiHmongHolenderskiIgboIndonezyjskiIrlandzkiIslandzkiJapońskiJawajskiJidiszJorubaKannadaKatalońskiKazachskiKhmerskiKirgiskiKoreańskiKorsykańskiKreolski (Haiti)KurdyjskiŁacińskiLaotańskiLitewskiŁotewskiLuksemburskiMacedońskiMalajalamMalajskiMalgaskiMaltańskiMaoriMarathiMongolskiNepalskiNiemieckiNorweskiOrmiańskiPasztoPendżabskiPerskiPolskiPortugalskiRosyjskiRumuńskiSamoańskiSerbskiShonaSindhiSłowackiSłoweńskiSomalijskiSothoSuahiliSundajskiSyngaleskiSzkocki gaelickiSzwedzkiTadżyckiTajskiTamilskiTeluguTureckiUkraińskiUrduUzbeckiWalijskiWęgierskiWietnamskiWłoskiXhosaZulu</p>
+
+<p>&nbsp;</p>
+
+<p>AngielskiPolski-------- [ Wszyscy ] --------AfrikaansAlbańskiAmharskiAngielskiArabskiAzerskiBaskijskiBengalskiBiałoruskiBirmańskiBośniackiBułgarskiCebuańskiChiński tradChiński uprChorwackiCzeskiCziczewaDuńskiEsperantoEstońskiFilipińskiFińskiFrancuskiFryzyjskiGalicyjskiGreckiGruzińskiGudżaratiHausaHawajskiHebrajskiHindiHiszpańskiHmongHolenderskiIgboIndonezyjskiIrlandzkiIslandzkiJapońskiJawajskiJidiszJorubaKannadaKatalońskiKazachskiKhmerskiKirgiskiKoreańskiKorsykańskiKreolski (Haiti)KurdyjskiŁacińskiLaotańskiLitewskiŁotewskiLuksemburskiMacedońskiMalajalamMalajskiMalgaskiMaltańskiMaoriMarathiMongolskiNepalskiNiemieckiNorweskiOrmiańskiPasztoPendżabskiPerskiPolskiPortugalskiRosyjskiRumuńskiSamoańskiSerbskiShonaSindhiSłowackiSłoweńskiSomalijskiSothoSuahiliSundajskiSyngaleskiSzkocki gaelickiSzwedzkiTadżyckiTajskiTamilskiTeluguTureckiUkraińskiUrduUzbeckiWalijskiWęgierskiWietnamskiWłoskiXhosaZulu</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Funkcja mowy jest ograniczona do 200 znak&oacute;w</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Opcje : Historia : Opinie zwrotne : <a class="SL_options" href="https://imtranslator.net/extensions/?tp=ff-ImTranslator&amp;a=0" id="SL_opt4" target="_blank" title="Wnieś swój wkład">Donate</a> Zamknij</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;password&rsquo; field, enter the password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;Log in&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>user is log, open the home page</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40" name="Login by email">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<fullexternalid><![CDATA[wykop-7]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging be email, used for registration</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;user or email&rsquo; field, enter the mail</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;password&rsquo; field, enter the password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>user is log, open the home page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="45" name="Login without account">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<fullexternalid><![CDATA[wykop-8]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging to site without account</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has not account</li>
+	<li>password has min. 6 characters</li>
+	<li>email is correct pattern</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;user or email&rsquo; field, enter random characters</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;password&rsquo; field, enter random characters min. 6</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>reopen logging site, message &#39;invalid login or password&#39;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="50" name="Login with wrong user name">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<fullexternalid><![CDATA[wykop-9]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging with wrong user name</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user name is wrong</li>
+	<li>existing user password</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;user or email&rsquo; field, enter wrong user name</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;password&rsquo; field, enter the password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;Log is&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>reopening the login page, the message &#39;incorrect login or password&#39;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="55" name="Login with wrong password">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<fullexternalid><![CDATA[wykop-10]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging with wrong password</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>wrong password</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;use or emailr&rsquo; field, enter the correct data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;password&rsquo; field, enter the wrong password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>reopening the login page, the message &#39;incorrect login or password&#39;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="60" name="Forgotten password">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<fullexternalid><![CDATA[wykop-11]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Procedure for created a new password</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>użytkownik zarejestrowany</li>
+	<li>adres mail aktywny</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;forgot your password?&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page &#39;generate new password&#39;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>filled in the &#39;Your e-mail address&#39; field with the e-mail address assigned to the user account</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>send a link</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>open link with in-box email</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open page to create a new password</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;new password&rsquo; field, enter the password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>repeat new password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>clik &#39;creat&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open logging page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;user&rsquo; and &#39;password field, enter the user name nad new password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>user log, open home page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="70" name="Login with wrong email">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<fullexternalid><![CDATA[wykop-12]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging with wrong email</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>wrong user email</li>
+	<li>existing user password</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;user or email&rsquo; field, enter the wrong email</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;password&rsquo; field, enter the password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>clik &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>reopening the login page, the message &#39;incorrect login or password&#39;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="75" name="Regestration with Facebook ">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<fullexternalid><![CDATA[wykop-13]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Regestration with Facebook account</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has Facebook account</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Clik &quot;link facebook account&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open the facebook.com login page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;email / phone number&rsquo; field, enter the correct data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;password&rsquo; field, enter the facebook password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>created a new wykop.pl account</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="81" name="Login by Facebook">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<fullexternalid><![CDATA[wykop-14]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging by Facebook account</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has facebook account</li>
+	<li>wykop.pl account link with facebook account</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Clik &quot;Log in with Facebook&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open log Facebook.com page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;user / phone number&rsquo; field, enter the correct FB data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;password&rsquo; field, enter the correct FB data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>clik &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User is logging</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="87" name="Change password">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<fullexternalid><![CDATA[wykop-15]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Changing the password to a different</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user is logged</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;settings&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>clik &#39;password&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;old password&rsquo; field, enter the present password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;new password&rsquo; field, enter the new password with correct patern</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>In the &#39;repeat password&#39; field, enter the same characters - &#39;new password&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>clik &#39;change password&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message password changed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="95" name="Change password (invalid)">
+	<node_order><![CDATA[14]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<fullexternalid><![CDATA[wykop-16]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Changing the password to a different using invalid present password</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user is log in</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;settings&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>clik &#39;password&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;old password&rsquo; field, enter the random characters</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;new password&rsquo; field, enter the new password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td style="text-align:left">&nbsp;</td>
+			<td>
+			<p>In the &#39;repeat password&#39; field, enter the same characters - &#39;new password</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>clik &#39;change password&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>password not changed, message &#39;the password is incorrect&#39;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="103" name="Change password (different password)">
+	<node_order><![CDATA[15]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<fullexternalid><![CDATA[wykop-17]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Changing the password to a different using two different password</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user is log in</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>clik &#39;setting&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click &#39;password&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;old password&rsquo; field, enter the present password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;new password&rsquo; field, enter the new password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>In the &#39;repeat password&#39; field, enter the different characters than &#39;new password&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>clik &#39;change&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>password do not change, message &#39;the passwords is different&#39;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="111" name="Change password (too small characters)">
+	<node_order><![CDATA[16]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<fullexternalid><![CDATA[wykop-18]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Changing the password to a different, using 5 characters</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user log in</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;settings&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>clik &#39;password&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>wypełnić pole &quot;stare hasło&quot; poprawnymi danymi</p>
+
+<p>In the &rsquo;old password&rsquo; field, enter the present password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;new password&rsquo; field, enter the 5 random characters</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>In the &#39;repeat password&#39; field, enter the same characters - &#39;new password&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>clik &#39;change&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>password not changed, message &#39;password minmum 6 characters&#39;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="119" name="Login with new password">
+	<node_order><![CDATA[17]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<fullexternalid><![CDATA[wykop-19]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging in to the website with new password, changed password.</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user changes password</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;user name or email&rsquo; field, enter the correct data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;password&rsquo; field, enter the new changed password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>clik &#39;log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>user logged in, open the home page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="124" name="Login with the old password">
+	<node_order><![CDATA[18]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<fullexternalid><![CDATA[wykop-20]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging in to the website using a old password</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user changes password</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;user name or email&rsquo; field, enter the correct data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;passwordr&rsquo; field, enter the old password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>clik &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message &#39;incorrect login or password&#39;, no login</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="129" name="Change email (wrong password)">
+	<node_order><![CDATA[19]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<fullexternalid><![CDATA[wykop-21]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Changing email with linked account the website, used wrong password</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user has a active new email</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;Settings&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>clik &#39;email&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;new email&rsquo; field, enter the new active email</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>In the &#39;repeat new email&#39; field, enter the same characters - &#39;new email&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;password account&rsquo; field, enter the wron password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>clik &#39;change&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message &#39;wrong password&#39;, email not change</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="137" name="Change email">
+	<node_order><![CDATA[20]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<fullexternalid><![CDATA[wykop-22]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Changing email with linked account the website</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user has a active new email</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>clik &#39;settings&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click &#39;email&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In the &rsquo;new email&rsquo; field, enter the new active account</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>In the &#39;repeat new email&#39; field, enter the same characters - &#39;new email&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>in the &#39;password account&#39; field, enter the present password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>click &#39;change&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message about a sending active link to a new email</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>open a link from the in-box</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>redirection to the website wykop.pl, changed e-mail</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="146" name="Change email (different emails)">
+	<node_order><![CDATA[21]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<fullexternalid><![CDATA[wykop-23]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Changing email with linked account the website use different email</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user has a new active email</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;Settings&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click &#39;email&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>in the &#39;new email&#39; field, enter the new email</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>In the &#39;repeat new email&#39; field, enter the random characters - &#39;new email&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>in the &#39;password account&#39; field, enter the present password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>clik &#39;change&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message &#39;email is different&#39;, email not changed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="154" name="Login with new email">
+	<node_order><![CDATA[22]]></node_order>
+	<externalid><![CDATA[24]]></externalid>
+	<fullexternalid><![CDATA[wykop-24]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging in to the website using a new, changed email</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user changed email</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>in the &#39;user name or email&#39; field, enter the new changed email</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;password&#39; field, enter the password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>user is log in, open homepage</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="159" name="Login with old mail">
+	<node_order><![CDATA[23]]></node_order>
+	<externalid><![CDATA[25]]></externalid>
+	<fullexternalid><![CDATA[wykop-25]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Login to the website using old email</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user changes email</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>in &#39;user name or email&#39; field, enter the old email</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;password&#39; field, enter the password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message &#39;invalid user name or password&#39;, user not login</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="164" name="Delete account">
+	<node_order><![CDATA[24]]></node_order>
+	<externalid><![CDATA[26]]></externalid>
+	<fullexternalid><![CDATA[wykop-26]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Delete account from the website wykop.pl</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>use has account</li>
+	<li>user is login</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;settings&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click &quot;tego&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>prescribe code with picture in &#39;code picture&#39; field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click &#39;Delete account&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>starting the deleting a user account</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="170" name="Delete account (wrong code picture)">
+	<node_order><![CDATA[25]]></node_order>
+	<externalid><![CDATA[27]]></externalid>
+	<fullexternalid><![CDATA[wykop-27]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Delete account from the website wykop.pl, use wrong picture code</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user log in</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;settings&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click &#39;tego&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open new page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>prescribe wrong code with picture&nbsp; in &#39;code picture&#39; field</p>
+
+<table style="height:50px; width:303px">
+	<tbody>
+		<tr>
+			<td style="text-align:left">&nbsp;</td>
+			<td>
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click &#39;Delete account&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message &#39;invalid picture code&#39;, not delete account</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="176" name="Login when deleting the account by Facebook (29 days)">
+	<node_order><![CDATA[26]]></node_order>
+	<externalid><![CDATA[28]]></externalid>
+	<fullexternalid><![CDATA[wykop-28]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging in to the website wykop.pl via FB, 29 days after starting the account deletion procedure</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user has an account lnked with FB</li>
+	<li>user started deletion account</li>
+	<li>user log in 29 day after started delete account</li>
+</ol>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;log in with facebook&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open facebook.com website</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;email or phone number&#39; dield, enter the correct FB data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>in the &#39;password&#39; field, enter the FB password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>logging in to wykop.pl, opening the home page, the account deletion procedure aborted</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="182" name="Login when deleting the account (29 days)">
+	<node_order><![CDATA[27]]></node_order>
+	<externalid><![CDATA[29]]></externalid>
+	<fullexternalid><![CDATA[wykop-29]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging in to the website wykop.pl, 29 days after starting the account deletion procedure</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user started deletion account</li>
+	<li>user log in 29 day after started delete account</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>in the &#39;user name or email&#39; field, enter the correct data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>filed filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;password&#39; field, enter the password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>logging in to wykop.pl, opening the home page, the account deletion procedure aborted</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="187" name="Login when deleted the account (31 days)">
+	<node_order><![CDATA[28]]></node_order>
+	<externalid><![CDATA[30]]></externalid>
+	<fullexternalid><![CDATA[wykop-30]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging in to the website wykop.pl after finifhing delete account, on the 31st day.</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user started deletion account</li>
+	<li>user log in 31 day after started delete account</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>in the &#39;user name or email&#39; field, enter the correct wykop data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;password&#39; field, enter the password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message &#39;invalid user name or password&#39;, not login</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="197" name="Login when deleting the account by Facebook (31 days)">
+	<node_order><![CDATA[30]]></node_order>
+	<externalid><![CDATA[32]]></externalid>
+	<fullexternalid><![CDATA[wykop-32]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging in to the website wykop.pl via Facebook after finishing delete account, on the 31st day.</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user has an account lnked with FB</li>
+	<li>user started deletion account</li>
+	<li>user log in 31 day after started delete account</li>
+</ol>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;log in with facebook&#39;</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open facebook.com website</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;email or phone number&#39; field, enter the correct facebook data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>in the &#39;password&#39; field, enter the facebook password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>user not login</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="203" name="Login when deleted the account (30 days)">
+	<node_order><![CDATA[31]]></node_order>
+	<externalid><![CDATA[33]]></externalid>
+	<fullexternalid><![CDATA[wykop-33]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging in to the website wykop.pl , 30 days after starting the account deletion procedure</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user started deletion account</li>
+	<li>user log in 30 day after started delete accoun</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>in the &#39;user name or email&#39; field, enter the correct wykop data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;password&#39; field, enter the correct password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click &#39;Log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>logging in to wykop.pl, opening the home page, the account deletion procedure aborted</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="213" name="Login when deleting the account by Facebook (30 days)">
+	<node_order><![CDATA[33]]></node_order>
+	<externalid><![CDATA[35]]></externalid>
+	<fullexternalid><![CDATA[wykop-35]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logging in to the website wykop.pl via FB, 30 days after starting the account deletion procedure</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has account</li>
+	<li>user has an account lnked with FB</li>
+	<li>user started deletion account</li>
+	<li>user log in 30 day after started delete account</li>
+</ol>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>click &#39;log in with facebook&#39;</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>open facebook.com website</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;email or phone number&#39; field, enter the correct FB data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>in the &#39;password&#39; field, enter the facebook password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click &#39;log in&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>logging in to wykop.pl, opening the home page, the account deletion procedure aborted</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="219" name="Registration user (no regulations)">
+	<node_order><![CDATA[34]]></node_order>
+	<externalid><![CDATA[36]]></externalid>
+	<fullexternalid><![CDATA[wykop-36]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Registration user without accepted regulations</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>user has active email</li>
+	<li>user name is free</li>
+	<li>password is more than 6 characters</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>in the &#39;user&#39; field, enter the user name</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>in the &#39;password&#39; field, enter the password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>in the &#39;email&#39; field, enter the active email</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field filled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>skip the regulations</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>field is [ ]</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Clik &#39;Registration&#39;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>message &#39;Please check this box to continue&#39;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testcases>
